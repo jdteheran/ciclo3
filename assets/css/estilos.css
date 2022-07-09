@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: 'iconos';
+    src:  url('../fonts/icommon/icomoon.eot?a7sxu4');
+    src:  url('../fonts/icommon/icomoon.eot?a7sxu4#iefix') format('embedded-opentype'),
+      url('../fonts/icommon/icomoon.ttf?a7sxu4') format('truetype'),
+      url('../fonts/icommon/icomoon.woff?a7sxu4') format('woff'),
+      url('../fonts/icommon/icomoon.svg?a7sxu4#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+header {
+    background: #1a6a15;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+header div {
+    display: inline-block;
+}
+
+header .logo {
+    margin-left: 10%;
+}
+
+header .logo img {
+    width: 250px;
+}
+
+header .lista {
+    margin-left: 25px;
+    vertical-align: top;
+    margin-top: 25px;
+}
+
+
+header .lista ul li {
+    display: inline-block;
+    margin-left: 35px;
+    margin-bottom: -50px;
+}
+
+header .lista ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header .lista ul li:first-child {
+    text-transform: uppercase;
+}
+
+header .buscador {
+    float: right;
+    margin-right: 10%;
+    margin-top: 15px;
+}
+
+header .buscador p {
+    background: white;
+    padding: 7px 10px 7px 10px;
+    border-radius: 50%;
+}
+
+header .buscador p span::before {
+    font-family: 'iconos';
+    content: '\e986';
+}
+
+header .lista ul li .casita::before {
+    font-family: 'iconos';
+    content: '\e902';
+    margin-right: 5px;
+}
+
+header .lista ul li .carpeta::before {
+    font-family: 'iconos';
+    content: '\e930';
+    margin-right: 5px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav ul {
+    margin-left: 10%;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6c6c6c;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a .discord::before {
+    font-family: 'iconos';
+    content: '\e901';
+    margin-right: 5px;
+}
+
+nav ul li a .ajuste::before {
+    font-family: 'iconos';
+    content: '\e900';
+    margin-right: 5px;
+}
+
+nav ul li a .flecha::before {
+    font-family: 'iconos';
+    content: '\ea1c';
+    margin-left: 5px;
+}
+
+section {
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+section .encabezado {
+    border-bottom: 1px solid #333;
+    width: 60%;
+}
+
+section .encabezado .rayo-icono p .rayo::before {
+    font-family: 'iconos';
+    content: '\e9b5';
+    margin-left: 5px;
+}
+
+section .encabezado .rayo-icono p {
+    background: #1a6a15;
+    color: white;
+    padding: 10px;
+}
+
+section .encabezado .rayo-icono, section .encabezado .titulo {
+    display: inline-block;
+}
+
+section .encabezado .titulo h3 {
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: 100;
+    color: #6c6c6c;
+}
+
+section .articulos {
+    margin-top: 25px;
+    border-bottom: 1px solid #6c6c6c;
+    width: 70%;
+    padding-bottom: 15px;
+}
+
+section article {
+    display: inline-block;
+}
+
+section article .caratula, section article .contenido {
+    display: inline-block;
+}
+
+section article .contenido {
+    vertical-align: top;
+    margin-left: 30px;
+}
+
+section article .contenido .nombre {
+    width: 80%;
+}
+
+section article .contenido .puntuacion {
+    margin-top: 12px;
+}
+
+section article .contenido .puntuacion p {
+    font-weight: bold;
+}
+
+section article .contenido .puntuacion .estrella::before {
+    font-family: 'iconos';
+    content: '\e9d9';
+    color: #1a6a15;
+}
+
+section article .capitulos-fechas {
+    margin-top: 12px;
+}
+
+section article .capitulos-fechas .capitulos, section article .capitulos-fechas .fechas {
+    display: inline-block;
+}
+
+section article .capitulos-fechas .capitulos ul li {
+    margin-bottom: 10px;
+    background: #ebebeb;
+    padding: 5px 15px 5px 15px;
+    border-radius: 15px;
+    list-style: none;
+}
+
+section article .capitulos-fechas .capitulos ul li a {
+    text-decoration: none;
+    color: #6c6c6c;
+}
+
+section article .capitulos-fechas .fechas {
+    margin-left: 20px;
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+section article .capitulos-fechas .fechas p {
+    margin-bottom: 25px;
+    color: #6c6c6c;
+    font-size: 12px;
+}
+
+section article .capitulos-fechas .fechas span {
+    background: #ba231f;
+    padding: 2px 5px 2px 5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}

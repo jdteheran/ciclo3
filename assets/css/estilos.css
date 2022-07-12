@@ -235,3 +235,51 @@ section article .capitulos-fechas .fechas span {
     font-weight: bold;
     font-size: 12px;
 }
+
+footer {
+    -webkit-box-shadow: 0px -5px 5px -1px rgba(97,97,97,0.23);
+    -moz-box-shadow: 0px -5px 5px -1px rgba(97,97,97,0.23);
+    box-shadow: 0px -5px 5px -1px rgba(97,97,97,0.23);
+    margin-top: 80px;
+    padding-bottom: 50px;
+}
+
+footer .lista-footer {
+   padding-top: 50px;
+   text-align: center;
+}
+
+footer .lista-footer ul li {
+    display: inline-block;
+    border-right: 2px solid #6c6c6c;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer .lista-footer ul li:last-child {
+    border-right: 0px;
+}
+
+footer .lista-footer ul li a {
+    text-decoration: none;
+    color: #6c6c6c;
+    text-transform: uppercase;
+}
+
+footer .lista-footer ul li:nth-child(2) a {
+    text-transform: capitalize;
+}
+
+footer .texto-footer {
+    margin-top: 20px;
+    text-align: center;
+   
+}
+
+footer .texto-footer p {
+    color: #616161;
+    font-size: 14px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}

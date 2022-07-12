@@ -283,3 +283,19 @@ footer .texto-footer p {
     margin-left: auto;
     margin-right: auto;
 }
+
+section .formulario {
+    margin-bottom: 40px;
+}
+
+section .formulario form {
+    margin-top: 15px;
+}
+
+section .formulario form input{
+    display: block;
+}
+
+section .formulario form input:last-child {
+    margin-top: 10px;
+}

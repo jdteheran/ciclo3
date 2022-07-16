@@ -299,3 +299,7 @@ section .formulario form input{
 section .formulario form input:last-child {
     margin-top: 10px;
 }
+
+.titulo-formulario, .inputs-formulario {
+    display: none;
+} 

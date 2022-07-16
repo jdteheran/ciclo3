@@ -7,7 +7,49 @@ btn_agregar.addEventListener('click', () => {
     let penultimo_capitulo = document.querySelector('.penul_cap').value
     let fecha = document.querySelector('.fecha').value
 
-    console.log(nombre_manga, ultimo_capitulo, penultimo_capitulo, fecha);
+    let template_manga = `<div class="articulos">
+                            <article>
+                                <div class="caratula">
+                                    <img src="assets/imgs/The-Lords-Coins-Arent-Decreasing.jpeg" alt="">
+                                </div>
+                                <div class="contenido">
+                                    <div class="nombre">
+                                        <h4>${nombre_manga}</h4>
+                                    </div>
+                                    <div class="puntuacion">
+                                        <p>
+                                            <span class="estrella"></span>
+                                            <span class="estrella"></span>
+                                            <span class="estrella"></span>
+                                            <span class="estrella"></span>
+                                            <span class="estrella"></span>
+                                            4.5
+                                        </p>
+                                    </div>
+                                    <div class="capitulos-fechas">
+                                        <div class="capitulos">
+                                            <ul>
+                                                <li><a href="#">${penultimo_capitulo}</a></li>
+                                                <li><a href="#">${ultimo_capitulo}</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="fechas">
+                                            <p><span>new</span></p>
+                                            <p>${fecha}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>`
+
+    let section = document.querySelector('section')
+
+    section.innerHTML = section.innerHTML + template_manga
+
+    document.querySelector('.titulo-formulario').style.display = 'none'
+    document.querySelector('.inputs-formulario').style.display = 'none'
+
+    document.querySelector('.btn-formulario').innerHTML = 'Agregar manga'
 
 })
 
